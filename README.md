@@ -9,11 +9,31 @@ This theme requires that you use [a user styles extension](https://github.com/op
 
 ### Desktop App
 
-No official support. Workarounds exist.
+No official support. Workarounds below:1
 
-**🛑 READ FIRST:** Most workarounds will request the compiled CSS file from this repository. You are strongly discouraged from using a remote CSS file. It's recommended that you create your own copy. An XSS attack could put your Slack client at risk.
+**🛑 READ FIRST:** This workaround will request the compiled CSS file from this repository. You are strongly discouraged from using a remote CSS file note under your exclusive control. It's recommended that you create your own fork of this repository. An XSS attack could put your Slack client at risk.
 
 [![Chat on Gitter](https://badges.gitter.im/laCour/slack-night-mode.png)](https://gitter.im/slack-night-mode/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) ([previous discussion](https://github.com/laCour/slack-night-mode/issues/73#issuecomment-242707078))
+
+#### Installation for Desktop app
+1) Open the ssb-interop.js file in your favorite text editor:
+    * OSX: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
+    * Windows: `C:\Users\Scellow\AppData\Local\slack\app-2.5.2\resources\app.asar.unpacked\src\static\`
+    * Linux: ???
+2) Add the following code at the end of the file and save:
+```
+document.addEventListener('DOMContentLoaded', function() {
+ $.ajax({
+   url: 'https://raw.githubusercontent.com/kaedys/slack-night-mode/master/css/raw/variants/arc-dark.css',
+   success: function(css) {
+     $("<style></style>").appendTo('head').html(css);
+   }
+ });
+});
+```
+3) Change the URL to point to your own fork of this repo, because importing a remote CSS that you don't exclusively control is _INSANELY INSECURE_!
+4) Restart the Slack app.
+5) Note that you will have to repeat these steps every time Slack is updated, because it overwrites the file changes.
 
 ## Themes
 
