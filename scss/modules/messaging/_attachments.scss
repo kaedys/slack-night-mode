@@ -126,6 +126,12 @@
   }
 }
 
+.c-message_kit {
+  &__file__meta {
+    color: $base-font-color;
+  }
+}
+
 .attachment_group {
   &.has_container {
     background: $color-base;
@@ -443,6 +449,14 @@
 
   .c-file__title {
     color: $base-font-color;
+  }
+}
+
+.c-file_container--has_thumb {
+  .c-file {
+    &__actions::before {
+      background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $color-shade-darkest 20px);
+    }
   }
 }
 

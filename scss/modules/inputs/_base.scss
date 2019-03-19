@@ -334,3 +334,17 @@ textarea {
     border-color: $color-shade-light;
   }
 }
+
+.c-filter_input {
+  background: $color-shade-light;
+}
+
+.p-share_dialog_message_input {
+  color: $base-font-color;
+}
+
+.c-texty_input {
+  .ql-placeholder {
+    color: $base-font-color;
+  }
+}

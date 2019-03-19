@@ -387,10 +387,7 @@ html.no_touch a.filetype_button_web:hover {
 }
 
 .c-file {
-  &__actions {
-    background: $color-shade-light;
-  }
-
+  
   &__action_button,
   &__action_button:link,
   &__action_button:focus,
@@ -398,6 +395,15 @@ html.no_touch a.filetype_button_web:hover {
     background: $color-shade-light;
     border-color: $color-shade-dark;
     color: $white;
+  }
+
+
+  &__meta {
+    color: $base-font-color;
+  }
+
+  &__slide--meta {
+    background-color: $color-shade-darkest;
   }
 }
 
@@ -412,15 +418,66 @@ html.no_touch a.filetype_button_web:hover {
   }
 }
 
-.c-pillow_file {
-  &_container {
-    background: $color-shade-light;
-    border-color: $color-shade-dark;
-    color: $base-font-color;
-  }
+.c-pillow_file_container {
+  background-color: $color-shade-darkest;
 
+  .c-pillow_file__swap {
+    .c-pillow_file__slide {
+      background-color: $color-shade-darkest;
+    }
+  }
+}
+
+.c-pillow_file {
   &__description,
   &__title {
     color: $base-font-color;
+  }
+}
+
+.p-file_list {
+  background: $color-shade-dark;
+  &__filters {
+    @extend .p-file_list;
+    border-color: $color-shade-dark;
+  }
+
+  &__file.c-pillow_file  {
+    &_container,
+    &_container--full_width {
+      background: $color-shade-dark;
+      border-color: $color-shade-dark;
+      color: $base-font-color;
+    }
+
+    &_container--full_width:hover {
+      background: $color-shade-light;
+      border-color: $color-shade-light;
+    }
+  }
+}
+
+.p-downloads_list__shift_hint {
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0), $color-base 25%, $color-base);
+  color: $base-font-color;
+}
+
+.p-download_item__container {
+  .p-download_item {
+    &__actions {
+      background-color: $color-base;
+    }
+
+    &__link {
+      &__open,
+      &__retry,
+      &__show {
+        color: $base-link-color;
+      }
+    }
+
+    &__name_row {
+      color: $base-font-color;
+    }
   }
 }
