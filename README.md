@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 ```
 3) Change the URL to point to your own fork of this repo, because importing a remote CSS that you don't exclusively control is _INSANELY INSECURE_!
-4) Change then end of the URL to point to your favorite theme of the ones in the project (or write your own and commit it to your fork).
+4) Change the end of the URL to point to your favorite theme of the ones in the forked project (or write your own and commit it to your fork).
 5) Restart the Slack app.
 6) Note that you will have to repeat these steps every time Slack is updated, because it overwrites the file changes.
 
