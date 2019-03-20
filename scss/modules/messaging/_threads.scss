@@ -1,4 +1,4 @@
-#threads_msgs_scroller_div {
+.p-threads_view_scroller_div {
   background: $color-base;
 
   &:not(.loading)::before {
@@ -41,7 +41,7 @@
   }
 }
 
-#threads_msgs.new_banner_is_showing::before {
+.p-threads_view.new_banner_is_showing::before {
   background: $color-base;
 }
 

@@ -1617,19 +1617,19 @@ body > pre { background: #858991; }
 
 .special_formatting_quote .quote_bar { background-color: #6b6f79; }
 
-#threads_msgs_scroller_div { background: #404552; }
+.p-threads_view_scroller_div { background: #404552; }
 
-#threads_msgs_scroller_div:not(.loading)::before { background: #404552; }
+.p-threads_view_scroller_div:not(.loading)::before { background: #404552; }
 
-#threads_msgs_scroller_div.loading::before { color: #949494; }
+.p-threads_view_scroller_div.loading::before { color: #949494; }
 
-#threads_msgs_scroller_div .threads_caught_up_divider .divider_line { border-top: 1px solid #2a2f39; }
+.p-threads_view_scroller_div .threads_caught_up_divider .divider_line { border-top: 1px solid #2a2f39; }
 
-#threads_msgs_scroller_div .threads_caught_up_divider .divider_label { background: #6b6f79; color: #d3dae3; }
+.p-threads_view_scroller_div .threads_caught_up_divider .divider_label { background: #6b6f79; color: #d3dae3; }
 
-#threads_msgs_scroller_div.loading { background: none; }
+.p-threads_view_scroller_div.loading { background: none; }
 
-#threads_msgs_scroller_div.loading::before { color: #d3dae3; }
+.p-threads_view_scroller_div.loading::before { color: #d3dae3; }
 
 #threads_view_banner.messages_banner { background: #2a2f39; }
 
@@ -1637,7 +1637,7 @@ body > pre { background: #858991; }
 
 #threads_view_banner.messages_banner:hover .clear_unread_messages { background: #6b6f79; }
 
-#threads_msgs.new_banner_is_showing::before { background: #404552; }
+.p-threads_view.new_banner_is_showing::before { background: #404552; }
 
 .p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field { background: #2a2f39; }
 
