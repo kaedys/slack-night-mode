@@ -201,7 +201,7 @@
   #typing_text { color: #2aa198; filter: none; }
   #notification_bar.wide #typing_text.overflow_ellipsis { -webkit-filter: none; filter: none; }
   #special_formatting_text { color: #2aa198; }
-  #message_edit_container .inline_message_input_container, #message_edit_container .inline_message_input_container.with_file_upload, #threads_msgs .inline_message_input_container, #threads_msgs .inline_message_input_container.with_file_upload, #reply_container.upload_in_threads .inline_message_input_container, #reply_container.upload_in_threads .inline_message_input_container.with_file_upload { background: #003340; border-color: #00232c; color: #a1adad; }
+  #message_edit_container .inline_message_input_container, #message_edit_container .inline_message_input_container.with_file_upload, .p-threads_view .inline_message_input_container, .p-threads_view .inline_message_input_container.with_file_upload, #reply_container.upload_in_threads .inline_message_input_container, #reply_container.upload_in_threads .inline_message_input_container.with_file_upload { background: #003340; border-color: #00232c; color: #a1adad; }
   .inline_message_input_container .ql-container { border-color: #003340; color: #a1adad; }
   .inline_message_input_container .ql-container.focus, .inline_message_input_container .ql-container:active, .inline_message_input_container .ql-container:hover { border-color: #003f50; }
   .c-message--editing { background: #00232c; border-color: #00232c; color: #a1adad; }

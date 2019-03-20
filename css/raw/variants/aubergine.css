@@ -404,7 +404,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 #special_formatting_text { color: #a3839f; }
 
-#message_edit_container .inline_message_input_container, #message_edit_container .inline_message_input_container.with_file_upload, #threads_msgs .inline_message_input_container, #threads_msgs .inline_message_input_container.with_file_upload, #reply_container.upload_in_threads .inline_message_input_container, #reply_container.upload_in_threads .inline_message_input_container.with_file_upload { background: #61485e; border-color: #4d394b; color: #f0d9ed; }
+#message_edit_container .inline_message_input_container, #message_edit_container .inline_message_input_container.with_file_upload, .p-threads_view .inline_message_input_container, .p-threads_view .inline_message_input_container.with_file_upload, #reply_container.upload_in_threads .inline_message_input_container, #reply_container.upload_in_threads .inline_message_input_container.with_file_upload { background: #61485e; border-color: #4d394b; color: #f0d9ed; }
 
 .inline_message_input_container .ql-container { border-color: #61485e; color: #f0d9ed; }
 
