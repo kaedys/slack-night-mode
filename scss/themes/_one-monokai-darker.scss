@@ -1,3 +1,8 @@
+// Slack Sidebar Theme:
+// #252526,#2b2d2e,#37373e,#d4d4d4,#2B2D2E,#D4D4D4,#a0c17f,#a0c17f
+
+// Looks like the Visual Studio theme: https://marketplace.visualstudio.com/items?itemName=victormejia.one-monokai-darker
+
 // Theme Colors
 $color-base: #1e1e1e !default;
 $color-highlight: #5c636f !default;
@@ -30,10 +35,10 @@ $color-shadow-transparent: rgba(255, 255, 255, 0) !default;
 
 // Code Colors
 $code-colors: (
-  keyword: $color-red, atom: #9fa8da, number: #c678dd, def: #6EB3C0,
-  variable: #6EB3C0, variable-alt: #d4d4d4, comment: #5c6370, string: $color-yellow,
-  string-alt: $color-yellow, meta: #75715E, qualifier: #eee, builtin: #A0C180,
-  bracket: #F8F8F2A5, tag: $color-red, attribute: $color-green, header: #75715E,
+  keyword: $color-red, atom: #9fa8da, number: #c678dd, def: #6eb3c0,
+  variable: #6eb3c0, variable-alt: #d4d4d4, comment: #5c6370, string: $color-yellow,
+  string-alt: $color-yellow, meta: #75715e, qualifier: #eee, builtin: #a0c180,
+  bracket: #F8F8F2A5, tag: $color-red, attribute: $color-green, header: #75715e,
   quote: #5c6370, hr: $color-shade-dark, link: $base-link-color
 );
 
